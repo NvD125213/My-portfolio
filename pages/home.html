@@ -1,70 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio của Developer chuyên nghiệp">
-    <meta name="keywords" content="Portfolio, Developer, Front-end, Thực tập sinh">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio của Developer chuyên nghiệp" />
+    <meta
+      name="keywords"
+      content="Portfolio, Developer, Front-end, Thực tập sinh" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>Chào mừng đến với Portfolio của Ngô Văn Đức</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="logo_nav">
-            <a href="#" class="logo">Portfolio</a>
-
-        </div>
-        <i class="fa-solid fa-bars menu_icon" id="menu_icon"></i>
-        <nav class="navbar">
-            <a href="#" class="active">Trang chủ</a>
-            <a href="#" class="">Giới thiệu</a>
-            <a href="#" class="">Dịch vụ</a>
-            <a href="#" class="">Portforlio</a>
-            <a href="#" class="">Liên hệ</a>
-        </nav>
+      <div class="logo_nav">
+        <a href="#" class="logo">Portfolio</a>
+      </div>
+      <i class="fa-solid fa-bars menu_icon" id="menu_icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Trang chủ</a>
+        <a href="#about" class="">Giới thiệu</a>
+        <a href="#service" class="">Kĩ năng</a>
+        <a href="#portfolio" class="">Sản phẩm cá nhân</a>
+        <a href="#contact" class="">Liên hệ</a>
+      </nav>
     </header>
 
     <section class="home" id="home">
-        <div class="home_content">
-            <h3>Xin chào mọi người!</h3>
-            <div class="name_user">
-                <h3>Tôi tên là</h3>
-                <h1>Ngô Văn Đức</h1>
-
-            </div>
-            <h3>Tôi là một <span>Full-stack Developer</span></h3>
-            <p>
-                Là một lập trình viên Fullstack với kinh nghiệm phát triển ứng dụng web sử dụng ReactJS, NodeJS và
-                Laravel
-                Thành thạo trong việc xây dựng giao diện người dùng thân thiện, tối ưu hiệu suất backend, và triển khai
-                API hiệu quả.
-                Đam mê học hỏi công nghệ mới, áp dụng OOP, Design Patterns, Dependency Injection, và các nguyên tắc lập
-                trình để tạo ra
-                phần mềm chất lượng cao. Mong muốn tìm kiếm cơ hội thực tập hoặc làm việc tại môi trường chuyên nghiệp
-                để phát triển kỹ
-                năng và đóng góp vào sự thành công của dự án.
-            </p>
-            <div class="social_media">
-                <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class=""><i class="fa-brands fa-github"></i></a>
-            </div>
-            <a href="#" class="btn_cv">Tải CV của tôi xuống</a>
+      <div class="home_content">
+        <h3>Xin chào mọi người!</h3>
+        <div class="name_user">
+          <h3>Tôi tên là</h3>
+          <h1>Ngô Văn Đức</h1>
         </div>
-
-        <div class="home_img">
-            <img src="../assets/avatar 4.jpg" alt="avatar-portfolio">
+        <h3 class="typing_text">Tôi là một <span></span></h3>
+        <p>
+          Là một lập trình viên Fullstack với kinh nghiệm phát triển ứng dụng
+          web sử dụng ReactJS, NodeJS và Laravel Thành thạo trong việc xây dựng
+          giao diện người dùng thân thiện, tối ưu hiệu suất backend, và triển
+          khai API hiệu quả. Đam mê học hỏi công nghệ mới, áp dụng OOP, Design
+          Patterns, Dependency Injection, và các nguyên tắc lập trình để tạo ra
+          phần mềm chất lượng cao. Mong muốn tìm kiếm cơ hội thực tập hoặc làm
+          việc tại môi trường chuyên nghiệp để phát triển kỹ năng và đóng góp
+          vào sự thành công của dự án.
+        </p>
+        <div class="social_media">
+          <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-github"></i></a>
         </div>
+        <a href="#" class="btn">Tải CV của tôi xuống</a>
+      </div>
+
+      <div class="home_img">
+        <img src="../assets/avatar 4.jpg" alt="avatar-portfolio" />
+      </div>
     </section>
-</body>
 
+    <section class="about" id="about">
+      <div class="about_img">
+        <div class="about_loading_img">
+          <img src="../assets/avatar ab.jpg" alt="avatar-about" />
+        </div>
+      </div>
+      <div class="about_content">
+        <h2 class="heading_about">Thông Tin <span>Cá Nhân</span></h2>
+        <ul>
+          <li>Tên đầy đủ: <span>Ngô Văn Đức</span></li>
+          <li>Ngày sinh: <span>16/08/2003</span></li>
+          <li>Nơi sinh: <span>Hải Dương</span></li>
+          <li>
+            Nơi ở hiện nay: <span>Tổ 18, Lĩnh Nam, Hoàng Mai, Hà Nội</span>
+          </li>
+          <li>Chuyên ngành: <span>Kĩ Thuật Phần Mềm</span></li>
+          <li>
+            Sở thích cá nhân:
+            <span>Đá bóng, xem phim và chơi FC Online </span>
+          </li>
+        </ul>
+        <a href="#" class="btn">Đọc thêm</a>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <h2 class="heading_about">Các <span>kĩ năng</span> tôi có</h2>
+      <div class="service_container">
+        <div class="service_box">
+          <i class="fa-solid fa-code iconic"></i>
+          <h3>Kĩ năng về Front-end</h3>
+          <p>
+            <span><i class="fa-brands fa-html5"></i>Html, Css, JS</span>
+            <span><i class="fa-brands fa-react"></i>ReactJS</span>
+          </p>
+          <a href="#" class="btn">Chi tiết</a>
+        </div>
+        <div class="service_box">
+          <i class="fa-solid fa-server iconic"></i>
+          <h3>Kĩ năng về Front-end</h3>
+
+          <p>
+            <span><i class="fa-brands fa-laravel"></i>Laravel</span>
+            <span><i class="fa-brands fa-node"></i>NodeJS</span>
+            <span><i class="fa-solid fa-c"></i>C#</span>
+          </p>
+          <a href="#" class="btn">Chi tiết</a>
+        </div>
+        <div class="service_box">
+          <i class="fa-brands fa-openid iconic"></i>
+          <h3>Các kĩ năng khác</h3>
+          <p>
+            <span><i class="fa-brands fa-git"></i>Git</span>
+            <span></span>
+          </p>
+          <a href="#" class="btn">Chi tiết</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading_about">Các <span>sản phẩm</span> tôi đã làm</h2>
+      <div class="portfolio_container">
+        <div class="portfolio_box">
+          <img src="../assets/portfolio 1.png" alt="portfolio-1" />
+          <div class="portfolio_layer">
+            <h4>Web học và thi Toeic Zenlish</h4>
+            <p>
+              Zenlish là một nền tảng học và luyện thi TOEIC hiệu quả, giúp
+              người dùng nâng cao kỹ năng tiếng Anh thông qua hệ thống bài
+              giảng, bài tập và đề thi thử chuẩn TOEIC. Website cung cấp lộ
+              trình học bài bản, phân tích chi tiết kết quả làm bài, cùng các
+              mẹo hữu ích để cải thiện điểm số.
+            </p>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio_box">
+          <img src="../assets/portfolio 3.png" alt="portfolio-1" />
+          <div class="portfolio_layer">
+            <h4>Ứng dụng di động kinh doanh đồ công nghệ</h4>
+            <p>
+              Ứng dụng mua sắm công nghệ thông minh, mang đến trải nghiệm mua
+              sắm tiện lợi với các sản phẩm điện thoại, laptop, phụ kiện và
+              thiết bị thông minh. Giao diện trực quan, cập nhật nhanh các
+              chương trình khuyến mãi, cùng tính năng thanh toán an toàn, giúp
+              bạn mua sắm dễ dàng chỉ với vài thao tác
+            </p>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio_box">
+          <img src="../assets/portfolio 2.png" alt="portfolio-1" />
+          <div class="portfolio_layer">
+            <h4>Web bán sách Nhã Nam</h4>
+            <p>
+              Nền tảng mua sắm sách trực tuyến cung cấp hàng ngàn đầu sách đa
+              dạng từ giáo trình, sách kỹ năng, đến tiểu thuyết, truyện tranh.
+              Giao diện thân thiện, tìm kiếm nhanh chóng, cùng chính sách giao
+              hàng linh hoạt giúp bạn dễ dàng sở hữu những cuốn sách yêu thích.
+            </p>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Liên hệ với <span>Tôi</span></h2>
+      <form action="#">
+        <div class="input_box">
+          <input type="text" placeholder="Họ và tên" />
+          <input type="text" placeholder="Địa chỉ Email" />
+        </div>
+        <div class="input_box">
+          <input type="number" placeholder="Số điện thoại" />
+          <input type="text" placeholder="Nội dung" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Tin nhắn của bạn"></textarea>
+          <input type="submit" value="Gửi tin nhắn" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <section class="footer">
+      <div class="footer_text">
+        <p>
+          Copyright &copy; 2025 by @ducvan2k3000@gmail.com | All Rights
+          Reseverd.
+        </p>
+      </div>
+      <div class="footer_icon">
+        <a href="#home">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+  </body>
 </html>
