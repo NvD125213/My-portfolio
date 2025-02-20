@@ -437,31 +437,246 @@ span {
   transition: 0.5s ease;
 }
 
-.service_container .service_box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
+.service {
+  display: grid;
+  grid-template-areas: "myArea myArea";
+  gap: 20px;
+}
+.service h2 {
+  grid-area: myArea;
 }
 
-.service_box .iconic {
-  font-size: 4rem;
+.bar {
+  font-size: 2.3rem;
 }
-.service_box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
+.technical_bars {
+  margin-right: 3rem;
 }
-.service_box h3 {
-  font-size: 2.6rem;
-  margin-top: 1rem;
+.technical_bars .bar {
+  margin: 4rem 0;
 }
-.service_box span {
-  margin-right: 1rem;
+.technical_bars .bar:first-child {
+  margin-top: 0;
 }
 
-.service_box span > i {
-  margin-right: 0.5rem;
-  font-size: 2rem;
+.technical_bars .bar:last-child {
+  margin-bottom: 0;
 }
 
+.technical_bars .bar .info {
+  margin-bottom: 0.5rem;
+}
+
+.technical_bars .bar .info span {
+  font-weight: 500;
+  font-size: 1.7rem;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.technical_bars .bar .progress_line {
+  position: relative;
+  border-radius: 1rem;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #000;
+  animation: animateBar 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.technical_bars .bar .progress_line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 1rem;
+  animation: animateBar 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animateBar {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress_line.html span {
+  width: 90%;
+}
+
+.progress_line.css span {
+  width: 80%;
+}
+.progress_line.js span {
+  width: 80%;
+}
+.progress_line.react span {
+  width: 75%;
+}
+.progress_line.node span {
+  width: 70%;
+}
+.progress_line.php span {
+  width: 55%;
+}
+
+.progress_line span::after {
+  position: absolute;
+  background: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  top: -2.8rem;
+  right: -2rem;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress_line.html span::after {
+  content: "90%";
+}
+
+.progress_line.css span::after {
+  content: "80%";
+}
+.progress_line.js span::after {
+  content: "80%";
+}
+.progress_line.react span::after {
+  content: "75%";
+}
+.progress_line.node span::after {
+  content: "70%";
+}
+.progress_line.php span::after {
+  content: "55%";
+}
+
+.progress_line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -1rem;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.radial_bars {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.radial_bars .radial_bar {
+  width: 50%;
+  height: 17rem;
+  margin-top: 10px;
+  position: relative;
+}
+.radial_bars .radial_bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 12rem;
+  height: 10rem;
+}
+.radial_bars .radial_bar .progress-bar {
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50.2;
+  }
+}
+
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 175.84;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 125.6;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 100.48;
+  }
+}
+
+.radial_bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 1;
+}
+
+.radial_bar .text {
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 1;
+}
+/* Portfolio */
 .portfolio {
   background-color: var(--snd-bg-color);
 }
